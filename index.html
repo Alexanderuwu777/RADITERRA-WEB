@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seguridad: Content Security Policy (CSP) y cabeceras de protección para repositorio público -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>RADI TERRA | Un sustrato de excelencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lora:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Zona sensible al cursor en el borde izquierdo y botón activador del menú -->
+    <div id="menu-hover-zone" class="menu-hover-zone" aria-hidden="true"></div>
+    
+    <button id="menu-trigger" class="menu-trigger" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="menu-label">Menú</span>
+    </button>
+
+    <!-- Botón flotante de Carrito -->
+    <button id="cart-Toggle" class="cart-floating-btn" aria-label="Ver carrito de compras">
+        🛒 <span id="cart-count" class="cart-badge">0</span>
+    </button>
+
+    <!-- Menú principal de navegación deslizable (Oculto al iniciar, aparece al pasar el cursor o seleccionar) -->
+    <aside id="sidebar-menu" class="sidebar-menu" aria-hidden="true">
+        <div class="sidebar-header">
+            <img src="assets/img/image_b253fd.jpg" alt="Logotipo de RADI TERRA" class="sidebar-logo">
+            <p class="sidebar-slogan">“Un sustrato de excelencia”</p>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#inicio" class="nav-link">1. Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">2. Nosotros</a></li>
+                <li><a href="#producto" class="nav-link">3. Nuestro Producto</a></li>
+                <li><a href="#catalogo" class="nav-link">4. Catálogo y Comercialización</a></li>
+                <li><a href="#contacto" class="nav-link">5. Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="https://wa.me/529617125212" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+                Atención por WhatsApp
+            </a>
+        </div>
+    </aside>
+
+    <!-- 1. INICIO (Página principal) -->
+    <header id="inicio" class="hero-section">
+        <div class="hero-bg">
+            <img src="assets/img/image_b253c3.jpg" alt="Plántulas cultivadas en sustrato RADI TERRA" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-brand-card">
+                <img src="assets/img/image_b253fd.jpg" alt="Logotipo de RADI TERRA" class="hero-logo">
+            </div>
+            <h1 class="hero-title">RADI TERRA</h1>
+            <p class="hero-slogan">“RADI TERRA un sustrato de excelencia”</p>
+            <p class="hero-description">
+                Transformamos residuos poscosecha del cultivo de hongos comestibles en una alternativa de sustrato para el sector agrícola, promoviendo el aprovechamiento de recursos y la economía circular.
+            </p>
+            <div class="hero-actions">
+                <a href="#producto" class="btn btn-primary">Conoce nuestro producto</a>
+                <a href="#catalogo" class="btn btn-secondary">Solicita tu pedido</a>
+            </div>
+            <div class="sustainability-pill">
+                🌱 Comprometidos con la sustentabilidad, el aprovechamiento responsable de recursos y la economía circular en el campo.
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. NOSOTROS -->
+        <section id="nosotros" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Identidad y Propósito</span>
+                    <h2 class="section-title">Nosotros</h2>
+                </div>
+
+                <!-- ¿Quiénes somos? / Historia / Problemática con sus imágenes correspondientes -->
+                <div class="about-grid">
+                    <article class="about-card">
+                        <div class="about-img-wrapper">
+                            <img src="assets/img/image_b253a0.jpg" alt="Cultivo agrícola sustentable con RADI TERRA" loading="lazy">
+                        </div>
+                        <div class="about-card-body">
+                            <h3>¿Quiénes somos?</h3>
+                            <p>
+                                RADI TERRA es una iniciativa enfocada en el aprovechamiento de residuos poscosecha del cultivo de hongos comestibles, mediante su transformación en un sustrato destinado al sector agrícola. Buscamos generar valor a partir de materiales que pueden ser aprovechados nuevamente, ofreciendo una alternativa innovadora que integra agricultura, sustentabilidad y economía circular.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="about-card">
+                        <div class="about-img-wrapper">
+                            <img src="assets/img/image_b25420.jpg" alt="Producción de plántulas en charolas con sustrato RADI TERRA" loading="lazy">
+                        </div>
+                        <div class="about-card-body">
+                            <h3>Historia y origen de RADI TERRA</h3>
+                            <p>
+                                RADI TERRA surge ante la necesidad de encontrar nuevas formas de aprovechar los residuos generados durante el cultivo de hongos comestibles. A partir de esta problemática, desarrollamos una propuesta que busca transformar estos materiales en una alternativa útil para la producción de plántulas, convirtiendo un desafío ambiental en una oportunidad de innovación.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="about-card">
+                        <div class="about-img-wrapper">
+                            <img src="assets/img/image_b25384.jpg" alt="Alternativa de sustrato sostenible en campo" loading="lazy">
+                        </div>
+                        <div class="about-card-body">
+                            <h3>Problemática que buscamos atender</h3>
+                            <p>
+                                La producción de hongos genera grandes cantidades de residuos que, al no aprovecharse adecuadamente, pueden contaminar el ambiente. Al mismo tiempo, los agricultores necesitan alternativas de sustratos accesibles y sostenibles.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Misión, Visión y Valores -->
+                <div class="mvv-grid">
+                    <div class="mvv-box">
+                        <span class="mvv-icon">🎯</span>
+                        <h3>Misión</h3>
+                        <p>
+                            Desarrollar y comercializar soluciones sustentables para el sector agrícola mediante el aprovechamiento de residuos poscosecha del cultivo de hongos comestibles, ofreciendo alternativas funcionales y accesibles para el sector que contribuyan al aprovechamiento responsable de recursos y a la economía circular.
+                        </p>
+                    </div>
+                    <div class="mvv-box">
+                        <span class="mvv-icon">🌿</span>
+                        <h3>Visión</h3>
+                        <p>
+                            Ser una empresa reconocida en el sector agrícola por desarrollar soluciones innovadoras y sustentables que contribuyan al aprovechamiento de residuos y al fortalecimiento de la economía circular.
+                        </p>
+                    </div>
+                    <div class="mvv-box">
+                        <span class="mvv-icon">🤝</span>
+                        <h3>Valores empresariales</h3>
+                        <p>
+                            En RADI TERRA nos guiamos por la sustentabilidad, la innovación, la responsabilidad y el compromiso, promoviendo el aprovechamiento responsable de los recursos y la economía circular. Trabajamos con la convicción de generar soluciones que aporten valor al sector agrícola y contribuyan al cuidado del medio ambiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. NUESTRO PRODUCTO -->
+        <section id="producto" class="section section-earth">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Calidad Evaluada</span>
+                    <h2 class="section-title">Nuestro Producto: “RADI TERRA”</h2>
+                </div>
+
+                <div class="product-showcase">
+                    <!-- Galería de fotografías del producto y su presentación -->
+                    <div class="product-gallery">
+                        <div class="main-product-photo">
+                            <img id="featured-product-img" src="assets/img/image_b2543e.jpg" alt="Sustrato RADI TERRA en aplicación para charolas">
+                        </div>
+                        <div class="thumbnail-row">
+                            <button class="thumb-btn active" data-img="assets/img/image_b2543e.jpg" aria-label="Ver textura del sustrato">
+                                <img src="assets/img/image_b2543e.jpg" alt="Textura del sustrato RADI TERRA">
+                            </button>
+                            <button class="thumb-btn" data-img="assets/img/image_b253df.jpg" aria-label="Ver presentación en costal de 25 kg">
+                                <img src="assets/img/image_b253df.jpg" alt="Costal de 25 kg RADI TERRA">
+                            </button>
+                            <button class="thumb-btn" data-img="assets/img/image_b25403.jpg" aria-label="Ver germinación de plántulas">
+                                <img src="assets/img/image_b25403.jpg" alt="Plántulas en charola de germinación">
+                            </button>
+                            <button class="thumb-btn" data-img="assets/img/image_b253bc.jpg" aria-label="Ver desarrollo foliar en vivero">
+                                <img src="assets/img/image_b253bc.jpg" alt="Desarrollo en vivero">
+                            </button>
+                             <button class="thumb-btn" data-img="assets/img/viveroplan.jpg" aria-label="Ver plan de vivero">
+    <img src="assets/img/viveroplan.jpg" alt="Plántulas en vivero RADI TERRA">
+</button>
+                        </div>
+                    </div>
+
+                    <!-- Información técnica y beneficios -->
+                    <div class="product-details">
+                        <div class="product-badge-raw">
+                            <strong>Materia prima utilizada:</strong> Residuos poscosecha del cultivo de hongos comestibles.
+                        </div>
+
+                        <h3>Descripción general</h3>
+                        <p class="product-desc">
+                            RADI TERRA es un sustrato elaborado a partir del aprovechamiento de residuos poscosecha del cultivo de hongos comestibles. Está desarrollado como una alternativa para la producción de plántulas y otras aplicaciones agrícolas, aprovechando las propiedades del material transformado.
+                        </p>
+
+                        <h3>Características físicas y técnicas</h3>
+                        <p class="specs-intro">
+                            Nuestro producto cuenta con características físicas y químicas evaluadas que permiten conocer su composición y comportamiento como sustrato:
+                        </p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-number">89 %</div>
+                                <div class="spec-label">De materia orgánica</div>
+                                <div class="spec-bar"><span style="width: 89%"></span></div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-number">84 %</div>
+                                <div class="spec-label">De espacio poroso total</div>
+                                <div class="spec-bar"><span style="width: 84%"></span></div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-number">33.8 %</div>
+                                <div class="spec-label">De aireación</div>
+                                <div class="spec-bar"><span style="width: 33.8%"></span></div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-number">90 %</div>
+                                <div class="spec-label">Retiene hasta 90 % de retención de humedad</div>
+                                <div class="spec-bar"><span style="width: 90%"></span></div>
+                            </div>
+                        </div>
+
+                        <h3>Beneficios y aplicaciones</h3>
+                        <ul class="benefits-list">
+                            <li>Alternativa para la producción de plántulas.</li>
+                            <li>Aprovechamiento de residuos del cultivo de hongos.</li>
+                            <li>Contribución a la economía circular.</li>
+                            <li>Potencial de incorporación en mezclas para sustratos agrícolas.</li>
+                            <li>Aplicaciones en viveros y jardinería, de acuerdo con las necesidades de cada cultivo.</li>
+                        </ul>
+
+                        <div class="product-presentation-highlight">
+                            <div>
+                                <span class="pres-title">Presentación disponible:</span>
+                                <strong>Costal de 25 kg</strong>
+                            </div>
+                            <div class="pres-price">$405 <small>MXN</small></div>
+                        </div>
+
+                        <div class="product-cta-group">
+                            <a href="#catalogo" class="btn btn-primary">Solicitar información o realizar compra</a>
+                            <button id="download-tech-sheet" type="button" class="btn btn-outline">
+                                📄 Descargar Ficha Técnica
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CATÁLOGO Y COMERCIALIZACIÓN -->
+        <section id="catalogo" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Adquiere RADI TERRA</span>
+                    <h2 class="section-title">Catálogo y Comercialización</h2>
+                </div>
+
+                <div class="catalog-layout">
+                    <!-- Tarjeta del Producto en Catálogo -->
+                    <div class="catalog-card">
+                        <div class="catalog-img-box">
+                            <span class="stock-badge">Disponible en Stock</span>
+                            <img src="assets/img/image_b253df.jpg" alt="Costal de 25 kg RADI TERRA">
+                        </div>
+                        <div class="catalog-card-body">
+                            <h3>Sustrato Agrícola “RADI TERRA”</h3>
+                            <p class="catalog-pres">Presentación: <strong>Costal de 25 kg</strong></p>
+                            <p class="catalog-specs">
+                                Sustrato elaborado a partir de residuos poscosecha del cultivo de hongos comestibles. 89 % materia orgánica, 84 % espacio poroso total, 33.8 % aireación y hasta 90 % de retención de humedad.
+                            </p>
+                            <div class="catalog-price-row">
+                                <span class="price-tag">$405 <small>MXN</small></span>
+                                <div class="qty-control">
+                                    <label for="product-qty">Cant:</label>
+                                    <input type="number" id="product-qty" min="1" max="500" value="1">
+                                </div>
+                            </div>
+                            <div class="catalog-actions">
+                                <button id="add-to-cart-btn" type="button" class="btn btn-primary btn-full">
+                                    🛒 Agregar al carrito
+                                </button>
+                                <button id="buy-whatsapp-btn" type="button" class="btn btn-whatsapp btn-full">
+                                    💬 Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solicitud de Cotización por Mayoreo -->
+                    <div class="wholesale-card">
+                        <h3>Cotizaciones por Compras de Mayoreo</h3>
+                        <p>
+                            ¿Requieres volumen para viveros, invernaderos o proyectos agrícolas? Solicita una cotización directa por mayoreo.
+                        </p>
+                        <form id="wholesale-form" class="clean-form" novalidate>
+                            <div class="form-group">
+                                <label for="ws-name">Nombre o Empresa</label>
+                                <input type="text" id="ws-name" required maxlength="80" placeholder="Ej. Vivero San Cristóbal">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ws-phone">Teléfono / WhatsApp</label>
+                                    <input type="tel" id="ws-phone" required maxlength="20" placeholder="961 000 0000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ws-sacks">Cantidad de costales (25 kg)</label>
+                                    <input type="number" id="ws-sacks" required min="5" max="10000" value="10">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ws-notes">Especificaciones o cultivo destino</label>
+                                <textarea id="ws-notes" rows="3" maxlength="300" placeholder="Producción de plántulas, hortalizas, entrega en..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-full">
+                                Solicitar cotización de mayoreo
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACTO -->
+        <section id="contacto" class="section section-dark-green">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Atención Directa</span>
+                    <h2 class="section-title">Contacto</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <img src="assets/img/image_b253fd.jpg" alt="Logo RADI TERRA" class="contact-logo">
+                        <h3>Información Oficial de Contacto</h3>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <span class="c-icon">📧</span>
+                                <div>
+                                    <strong>Correo electrónico:</strong>
+                                    <a href="mailto:raditerra32@gmail.com">raditerra32@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="c-icon">📞</span>
+                                <div>
+                                    <strong>Número telefónico:</strong>
+                                    <p>
+                                        <a href="tel:9617125212">961-712-52-12</a> o <a href="tel:9637106630">963-710-66-30</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="c-icon">📸</span>
+                                <div>
+                                    <strong>Redes sociales oficiales (Instagram):</strong>
+                                    <a href="https://instagram.com/radi_terra32" target="_blank" rel="noopener noreferrer">@radi_terra32</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="c-icon">📍</span>
+                                <div>
+                                    <strong>Ubicación y zona de cobertura comercial:</strong>
+                                    <p>Col Chichima Sabinal 30093 Comitán de Dominguez Chiapas</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <h3>Formulario de Contacto</h3>
+                        <form id="contact-form" class="clean-form" novalidate>
+                            <div class="form-group">
+                                <label for="c-name">Nombre completo</label>
+                                <input type="text" id="c-name" required maxlength="80" placeholder="Tu nombre">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="c-email">Correo electrónico</label>
+                                    <input type="email" id="c-email" required maxlength="100" placeholder="correo@ejemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-phone">Teléfono</label>
+                                    <input type="tel" id="c-phone" required maxlength="20" placeholder="963 000 0000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="c-message">Mensaje</label>
+                                <textarea id="c-message" rows="4" required maxlength="400" placeholder="Escribe tu consulta o solicitud..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+                            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal del Carrito de Compras -->
+    <div id="cart-modal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Tu Carrito de Pedido</h3>
+                <button id="close-cart-btn" class="close-btn" aria-label="Cerrar ventana">&times;</button>
+            </div>
+            <div id="cart-items-container" class="modal-body">
+                <p>El carrito está vacío.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total-row">
+                    <span>Total estimado:</span>
+                    <strong id="cart-total-amount">$0 MXN</strong>
+                </div>
+                <button id="checkout-whatsapp-btn" type="button" class="btn btn-whatsapp btn-full">
+                    Confirmar pedido por WhatsApp
+                </button>
+                <small style="display:block; text-align:center; margin-top:10px; color:#526354;">
+    🔒 Pagos electrónicos con tarjeta disponibles próximamente (2.ª etapa).
+</small>
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página y Aviso de Privacidad -->
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <div>
+                <strong>RADI TERRA</strong> — “Un sustrato de excelencia”
+                <p class="footer-sub">Col Chichima Sabinal 30093 Comitán de Dominguez Chiapas | raditerra32@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#producto">Producto</a>
+                <a href="#catalogo">Catálogo</a>
+                <button id="privacy-btn" type="button" class="link-btn">Aviso de Privacidad y Políticas Comerciales</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script compilado desde TypeScript -->
+    <script src="app.js" defer></script>
+</body>
+</html>
